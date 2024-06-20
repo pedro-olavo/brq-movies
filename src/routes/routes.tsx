@@ -3,7 +3,7 @@ import { useTheme } from "styled-components/native";
 import { AllMovies, FavoriteMovies } from "@screens";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { Screens } from "./types";
-import { TabBarLabel, Typography } from "@components";
+import { HeaderTitle, TabBarLabel, Typography } from "@components";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Tab = createMaterialTopTabNavigator()
@@ -47,20 +47,14 @@ export function AppRoutesStack() {
           borderBottomWidth: 0,
           elevation: 0,
         },
-        headerLeftContainerStyle: { marginLeft: 20 },
-        headerRightContainerStyle: { marginRight: 20 },
+
       }}
     >
       <Stack.Screen
         name="Tabs"
         options={{
           title: '',
-          headerLeft: () => (
-            <Typography variant="title-02">
-              BRQ Movies
-            </Typography>
-          )
-
+          headerLeft: () => <HeaderTitle />
         }}
         component={TabNavigator}
       />
