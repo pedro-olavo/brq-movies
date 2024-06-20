@@ -9,8 +9,8 @@
       "@components": [
         "src/components/index"
       ],
-      "@screens": [
-        "src/screens/index"
+      "@modules": [
+        "src/modules/index"
       ],
       "@routes/*": [
         "src/routes/*"

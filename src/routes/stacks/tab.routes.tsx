@@ -1,13 +1,10 @@
-
-import { useTheme } from "styled-components/native";
-import { AllMovies, FavoriteMovies } from "@screens";
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Screens } from "./types";
-import { HeaderTitle, TabBarLabel, Typography } from "@components";
-import { createStackNavigator } from "@react-navigation/stack";
+import { TabBarLabel } from "@components";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { Screens } from "@routes/types";
+import { AllMovies, FavoriteMovies } from "@modules";
+import { useTheme } from "styled-components";
 
 const Tab = createMaterialTopTabNavigator()
-const Stack = createStackNavigator();
 
 export function TabNavigator() {
   const { colors } = useTheme();
@@ -33,31 +30,5 @@ export function TabNavigator() {
       <Tab.Screen name={Screens.AllMovies} component={AllMovies} />
       <Tab.Screen name={Screens.FavoriteMovies} component={FavoriteMovies} />
     </Tab.Navigator >
-  );
-}
-
-export function AppRoutesStack() {
-  const { colors } = useTheme();
-
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: colors["neutral-01"],
-          borderBottomWidth: 0,
-          elevation: 0,
-        },
-
-      }}
-    >
-      <Stack.Screen
-        name="Tabs"
-        options={{
-          title: '',
-          headerLeft: () => <HeaderTitle />
-        }}
-        component={TabNavigator}
-      />
-    </Stack.Navigator>
   );
 }

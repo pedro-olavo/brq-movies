@@ -1,5 +1,8 @@
 import { ThemeProvider } from 'styled-components/native';
 import theme from '../theme/theme';
+import { Provider } from 'react-redux';
+import { persistor, store } from '@stores/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 interface AppProviderProps {
   children: React.ReactNode;
@@ -8,7 +11,11 @@ interface AppProviderProps {
 export function AppProvider({ children }: AppProviderProps) {
   return (
     <ThemeProvider theme={theme}>
-      {children}
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          {children}
+        </PersistGate>
+      </Provider>
     </ThemeProvider>
   );
 }

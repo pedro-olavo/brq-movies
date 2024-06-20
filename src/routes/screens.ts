@@ -5,6 +5,9 @@ export interface IScreenInfo {
 }
 
 const screensInfo: { [key in Screens]: IScreenInfo } = {
+  [Screens.SignIn]: {
+    name: 'Login',
+  },
   [Screens.AllMovies]: {
     name: 'Todos os Filmes',
   },

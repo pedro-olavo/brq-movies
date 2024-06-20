@@ -1,15 +1,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'react-native';
-import { AppRoutesStack } from './routes';
+import { AppRoutesStack, AuthRoutesStack } from './stacks';
 import { useTheme } from 'styled-components/native';
+import useAuth from '@hooks/useAuth';
 
 export default function Routes() {
   const { colors } = useTheme()
+  const { isAuthenticated } = useAuth()
 
   return (
     <NavigationContainer>
       <StatusBar backgroundColor={colors['neutral-01']} barStyle="light-content" />
-      <AppRoutesStack />
+      {isAuthenticated ? <AppRoutesStack /> : <AuthRoutesStack />}
     </NavigationContainer>
   );
 }
