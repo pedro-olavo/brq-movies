@@ -9,13 +9,7 @@ import { useEffect } from 'react';
 export function App() {
 
   useEffect(() => {
-    SplashScreen.show()
-
-    const timer = setTimeout(() => {
-      SplashScreen.hide();
-    }, 2000);
-
-    return () => clearTimeout(timer);
+    SplashScreen.hide();
   }, []);
 
   return (
