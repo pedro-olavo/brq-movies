@@ -9,8 +9,8 @@
       "@components": [
         "src/components/index"
       ],
-      "@modules": [
-        "src/modules/index"
+      "@modules/*": [
+        "src/modules/*"
       ],
       "@routes/*": [
         "src/routes/*"
@@ -23,6 +23,12 @@
       ],
       "@hooks/*": [
         "src/hooks/*"
+      ],
+      "@helper/*": [
+        "src/helper/*"
+      ],
+      "@services/*": [
+        "src/services/*"
       ]
     }
   }

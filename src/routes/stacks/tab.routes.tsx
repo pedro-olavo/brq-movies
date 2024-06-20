@@ -1,8 +1,8 @@
-import { TabBarLabel } from "@components";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { TabBarLabel } from "@components";
 import { Screens } from "@routes/types";
-import { AllMovies, FavoriteMovies } from "@modules";
 import { useTheme } from "styled-components";
+import { AllMovies, FavoriteMovies } from "@modules/movies";
 
 const Tab = createMaterialTopTabNavigator()
 

@@ -12,9 +12,12 @@ module.exports = {
           '@routes': './src/routes',
           '@stores': './src/stores',
           '@hooks': './src/hooks',
+          '@services': './src/services',
           '@theme': './src/theme',
+          '@helper': './src/helper',
         },
       },
     ],
+    'module:react-native-dotenv',
   ],
 };

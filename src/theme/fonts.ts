@@ -35,7 +35,7 @@ export const lineHeights: LineHeightsTheme = {
   'display-01': '48px',
   'display-02': '48px',
   'display-03': '40px',
-  'title-01': '32px',
+  'title-01': '36px',
   'title-02': '28px',
   'title-03': '24px',
   'title-04': '24px',

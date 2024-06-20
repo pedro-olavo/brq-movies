@@ -11,6 +11,7 @@ import {
 } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import authReducer from './slices/auth';
+import favoriteMoviesReducer from './slices/favoriteMovies';
 
 const persistConfig = {
   key: 'root',
@@ -19,6 +20,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  favoriteMovies: favoriteMoviesReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
