@@ -24,6 +24,7 @@ export const SignIn: React.FC = () => {
           value={user}
           onChangeText={setUser}
           error={Boolean(error)}
+          testID='USER-INPUT'
         />
         <Input
           Icon={Lock}
@@ -31,6 +32,7 @@ export const SignIn: React.FC = () => {
           value={password}
           onChangeText={setPassword}
           error={Boolean(error)}
+          testID='PASSWORD-INPUT'
         />
 
         {error && (
@@ -41,7 +43,11 @@ export const SignIn: React.FC = () => {
         )}
       </S.InputsContainer>
 
-      <S.LoginButton onPress={handleLogin} disabled={!user || !password}>
+      <S.LoginButton
+        onPress={handleLogin}
+        disabled={!user || !password}
+        testID='LOGIN-BTN'
+      >
         <Typography variant='title-04' weight='semiBold'>Entrar</Typography>
       </S.LoginButton>
 

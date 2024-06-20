@@ -12,13 +12,13 @@ export const Logout: React.FC = () => {
     <Popover
       arrowSize={{ width: 0, height: 0 }}
       from={(
-        <S.Menu>
+        <S.Menu testID='MENU-BTN'>
           <S.MenuIcon />
         </S.Menu>
       )}
     >
       <S.MenuContent>
-        <S.MenuItem onPress={() => logout()}>
+        <S.MenuItem testID="LOGOUT-BTN" onPress={() => logout()}>
           <S.LogoutIcon />
           <Typography color="grayScale-09">Sair</Typography>
         </S.MenuItem>
