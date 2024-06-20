@@ -27,6 +27,7 @@ export function TabNavigator() {
         tabBarInactiveTintColor: colors['grayScale-05'],
         tabBarIndicatorStyle: { backgroundColor: colors['primary-01'] },
         tabBarStyle: { backgroundColor: colors["neutral-01"], justifyContent: 'center', height: 75 },
+        tabBarTestID: `TAB-LABEL-${route.name}-BTN`
 
       })}>
       <Tab.Screen name={Screens.AllMovies} component={AllMovies} />
