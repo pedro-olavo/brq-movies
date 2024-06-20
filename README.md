@@ -1,79 +1,82 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# BRQ Movies
 
-# Getting Started
+## Descrição do Projeto
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+O **BRQ Movies** é uma aplicação móvel desenvolvida para possibilitar o usuário ver e favoritar seus filmes
 
-## Step 1: Start the Metro Server
+## Tecnologias Utilizadas
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Desenvolvimento
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **React Native**: Framework para construção de aplicações móveis nativas usando React.
+- **React Navigation**: Biblioteca de navegação para gerenciar rotas e navegação dentro da aplicação.
+- **Styled Components**: Utilizado para estilização dos componentes com uma abordagem CSS-in-JS.
+- **Context API**: Gerenciamento de estado leve e compartilhamento de dados entre componentes.
+- **Redux**: Biblioteca para gerenciamento de estado global da aplicação.
+- **React Hooks**: Utilizado para gerenciar estado e efeitos colaterais em componentes funcionais.
 
-```bash
-# using npm
-npm start
+### Bibliotecas
 
-# OR using Yarn
-yarn start
-```
+- **React Query**: Biblioteca utilizada para realizar requisições
+- **React Native Popover View**: Biblioteca para criação de menus popover
 
-## Step 2: Start your Application
+### Testes
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- **Detox**: Ferramenta de teste de ponta a ponta (E2E) para aplicativos React Native.
+- **Jest**: Framework de testes em JavaScript para garantir a funcionalidade e confiabilidade dos componentes e lógica da aplicação.
 
-### For Android
+## Funcionalidades
 
-```bash
-# using npm
-npm run android
+- **Listagem de filmes**: Exibe filmes populares do TMDB
+- **Favoritos**: Permite ao usuário salvar os seus filmes favoritos
 
-# OR using Yarn
-yarn android
-```
+## Como Executar o Projeto
 
-### For iOS
+1. **Clone o Repositório**:
+   ```sh
+   git clone git@github.com:pedro-olavo/brq-movies.git
+   cd brq-movies
+   ```
 
-```bash
-# using npm
-npm run ios
+2. **Instale as Dependências**:
+   ```sh
+   yarn install
+   ```
 
-# OR using Yarn
-yarn ios
-```
+3. **Execute a Aplicação**:
+   ```sh
+   yarn start
+   ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+4. **Execute os Testes**:
+   - **Detox**:
+     ```sh
+     yarn build:detox
+     yarn test:detox
+     ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Estrutura do Projeto
 
-## Step 3: Modifying your App
+- **/src**: Contém o código-fonte da aplicação.
+  - **/assets**: Recursos estáticos e imagens.
+  - **/components**: Componentes reutilizáveis.
+  - **/contexts**: Configurações e provedores do Context API.
+  - **/hooks**: Hooks da aplicação.
+  - **/modules**: Modulos da aplicação.
+  - **/routes**: Configurações de navegação.
+  - **/stores**: Configurações e stores do Redux.
+  - **/theme**: Estilos globais e temas.
+  - **/helper**: Funções Auxiliares
+  - **/services**: Configurações do Axios
 
-Now that you have successfully run the app, let's modify it.
+## Contribuições
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+Contribuições são bem-vindas! Se você encontrar um problema ou tiver uma sugestão, sinta-se à vontade para abrir uma _issue_ ou enviar um _pull request_.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Licença
 
-## Congratulations! :tada:
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Feito com ❤️ por [Pedro Olavo](https://github.com/pedro-olavo).
