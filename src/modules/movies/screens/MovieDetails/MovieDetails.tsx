@@ -5,7 +5,7 @@ import { InfoCard, Typography } from '@components';
 import { useTheme } from 'styled-components/native';
 import { NativeScrollEvent, NativeSyntheticEvent, StatusBar } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
-import { Heart, Star, Vote } from 'lucide-react-native';
+import { Calendar, Heart, Star, Vote } from 'lucide-react-native';
 import { formatDate } from '@helper/formatDate'
 import useFavoriteMovies from '@hooks/useFavoriteMovie';
 import * as S from './MovieDetails.styles';
@@ -84,7 +84,7 @@ export const MovieDetails: React.FC<IMovieDetailsProps> = ({ navigation, route }
           <InfoCard Icon={Heart} label='Nota' info={vote_average.toFixed(1)} />
           <InfoCard Icon={Vote} label='Qtd. Notas' info={vote_count} />
           <InfoCard Icon={Star} label='Popularidade' info={popularity.toFixed(0)} />
-          <InfoCard Icon={Star} label='Lançamento' info={formatDate(release_date)} />
+          <InfoCard Icon={Calendar} label='Lançamento' info={formatDate(release_date)} />
         </S.GeneralInfo>
       </S.Content>
 
