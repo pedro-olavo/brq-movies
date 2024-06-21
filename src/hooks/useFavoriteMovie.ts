@@ -26,9 +26,18 @@ const useFavoriteMovies = (id?: IUseFavoriteMovies) => {
     return movies?.some(movie => movie.id === movieId);
   };
 
+  const toggleFavoriteMovie = (movie: IMovie) => {
+    if (isMovieFavorite(movie.id)) {
+      removeFavorite(movie.id);
+    } else {
+      addFavorite(movie);
+    }
+  };
+
   return {
     addFavorite,
     removeFavorite,
+    toggleFavoriteMovie,
     isMovieFavorite: isMovieFavorite(id),
     movies,
   };

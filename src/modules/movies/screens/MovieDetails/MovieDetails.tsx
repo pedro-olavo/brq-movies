@@ -29,7 +29,7 @@ export const MovieDetails: React.FC<IMovieDetailsProps> = ({ navigation, route }
     release_date
   } = route.params;
 
-  const { addFavorite, removeFavorite, isMovieFavorite } = useFavoriteMovies(id)
+  const { isMovieFavorite, toggleFavoriteMovie } = useFavoriteMovies(id)
 
   const [headerTransparent, setHeaderTransparent] = useState(true);
 
@@ -57,17 +57,15 @@ export const MovieDetails: React.FC<IMovieDetailsProps> = ({ navigation, route }
       ),
       headerRight: () => (
         <S.LikeButton
-          liked={isMovieFavorite as boolean}
-          onPress={() => {
-            isMovieFavorite ? removeFavorite(id) : addFavorite(route.params)
-          }}
+          liked={isMovieFavorite}
+          onPress={() => toggleFavoriteMovie(route.params)}
           testID='TOGGLE-FAVORITE-MOVIE-BTN'
         >
           <S.LikeIcon fill={theme.colors['grayScale-09']} />
         </S.LikeButton>
       ),
     })
-  }, [navigation, headerTransparent, id, isMovieFavorite, removeFavorite, addFavorite])
+  }, [navigation, headerTransparent, id, isMovieFavorite])
 
   return (
     <S.Container onScroll={handleScroll}>
