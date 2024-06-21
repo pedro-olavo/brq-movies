@@ -19,6 +19,7 @@
 		EEF9B0BCA2F943A488058CA9 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 297208DBFB6A42678537F9A8 /* Nunito-Light.ttf */; };
 		5C95D80DE02B428FAE8317DB /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD3D0D441A2F43D68C1C00AA /* Nunito-Regular.ttf */; };
 		643D1A323BF54787A2A7BBCB /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6188C8B0AC41899E93A38A /* Nunito-SemiBold.ttf */; };
+		D552FFF3A9EA4A9F95E2E6FC /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF908859459B4A4091C928B9 /* BootSplash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		297208DBFB6A42678537F9A8 /* Nunito-Light.ttf */ = {isa = PBXFileReference; name = "Nunito-Light.ttf"; path = "../src/assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		DD3D0D441A2F43D68C1C00AA /* Nunito-Regular.ttf */ = {isa = PBXFileReference; name = "Nunito-Regular.ttf"; path = "../src/assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CA6188C8B0AC41899E93A38A /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; name = "Nunito-SemiBold.ttf"; path = "../src/assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF908859459B4A4091C928B9 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "BRQMovies/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				DF908859459B4A4091C928B9 /* BootSplash.storyboard */,
 			);
 			name = BRQMovies;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				EEF9B0BCA2F943A488058CA9 /* Nunito-Light.ttf in Resources */,
 				5C95D80DE02B428FAE8317DB /* Nunito-Regular.ttf in Resources */,
 				643D1A323BF54787A2A7BBCB /* Nunito-SemiBold.ttf in Resources */,
+				D552FFF3A9EA4A9F95E2E6FC /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

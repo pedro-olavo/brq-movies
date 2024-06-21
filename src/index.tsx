@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import SplashScreen from 'react-native-splash-screen'
+import BootSplash from 'react-native-bootsplash';
 
 import Routes from './routes';
 import { AppProvider } from './contexts/app';
@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 export function App() {
 
   useEffect(() => {
-    SplashScreen.hide();
+    BootSplash.hide({ fade: true });
   }, []);
 
   return (
